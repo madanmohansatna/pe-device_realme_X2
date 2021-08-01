@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X2.mk
+    $(LOCAL_DIR)/dot_X2.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X2-eng \
-    aosp_X2-user \
-    aosp_X2-userdebug
+    dot_X2-eng \
+    dot_X2-user \
+    dot_X2-userdebug
