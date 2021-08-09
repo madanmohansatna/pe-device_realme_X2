@@ -15,6 +15,7 @@ WITH_GAPPS := true
 TARGET_INCLUDE_WIFI_EXT := true
 EXTRA_FOD_ANIMATIONS := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_X2
