@@ -1,24 +1,27 @@
-#
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 ShapeShiftOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 $(call inherit-product, device/realme/X2/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Octavi stuff.
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+
+# OctaviOS stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := false
+TARGET_WANTS_FOD_ANIMATIONS := true
+OCTAVI_BUILD_TYPE := UnOfficial
+OCTAVI_DEVICE_MAINTAINER := Chayan_H
+
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_X2
+PRODUCT_NAME := octavi_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
