@@ -29,7 +29,7 @@ TARGET_LMKD_STATS_LOG := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-octavi
+    $(LOCAL_PATH)/overlay-aosp
 
 # Properties
 -include $(LOCAL_PATH)/product_props.mk
@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage Specific perms
 PRODUCT_COPY_FILES += \
-    vendor/octavi/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/aosp/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
